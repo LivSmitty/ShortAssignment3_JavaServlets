@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Credit Card Information</title>
+    </h:head>
+    <h:body>
+        <div id="mainContainer">
+
+            <div id="left" class="subContainer greyBox">
+                <h4>Please enter credit card information below:</h4>                              
+                <form method="post" action= "Assignment3Servlet">
+                    <h4>
+                        Last Name: <h:inputText id="lastName" size="20" maxlength="20" value="#{CreditCardBean.lastName}" /><br/>
+                        First Name: <h:inputText id="firstName" size="20" maxlength="20" value="#{CreditCardBean.firstName}"/><br/>
+                        Street Address: <h:inputText id="streetAddress" size="20" maxlength="20" value="#{CreditCardBean.streetAddress}"/><br/>
+                        City: <h:inputText id="city" size="20" maxlength="20" value="#{CreditCardBan.city}"/><br/>
+                        State: <h:inputText id="state" size="2" maxlength="2" value="#{CreditCardBean.state}"/><br/>
+                        Zip: <h:inputText id="zip" size="5" maxlength="5" value="#{CreditCardBean.zip}"/><br/>
+                        Credit Card Number: <h:inputText id="ccNumber" size="16" maxlength="16" value="#{CreditCardBean.ccNumber}"/><br/>
+                        Security Code: <h:inputText id="securityCode" size="3" maxlength="3" value="#{CreditCardBean.securityCode}"/><br/>
+                        Expiration Date: <h:inputText id="expirationDate" size="10" maxlength="10" value="#{CreditCardBean.expirationDate}"/><br/>
+                        <h:commandButton id="submit" value="submit" action="response" />
+                    </h4>
+                </form>
+            </div>  
+        </div>      
+    </h:body>
+</html>
+
